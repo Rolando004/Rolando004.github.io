@@ -1,4 +1,4 @@
-$(function () {
+-+$(function () {
   // initialize canvas and context when able to
   canvas = document.getElementById("canvas");
   ctx = canvas.getContext("2d");
@@ -28,12 +28,12 @@ $(function () {
      * Comment the lines out to remove the grid
      */
 
-    // for (let i = 100; i < canvas.width; i += 100) {
-    //   createPlatform(i, canvas.height, -1, -canvas.height);
-    // }
-    // for (let i = 100; i < canvas.height; i += 100) {
-    //   createPlatform(canvas.width, i, -canvas.width, -1);
-    // }
+   for (let i = 100; i < canvas.width; i += 100) {
+       createPlatform(i, canvas.height, -1, -canvas.height);
+    }
+    for (let i = 100; i < canvas.height; i += 100) {
+      createPlatform(canvas.width, i, -canvas.width, -1);
+    }
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE BELOW THIS POINT///////////
@@ -44,6 +44,11 @@ $(function () {
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
 
+    // createPlatform(500, 300, 200, 20); 
+    // createPlatform(100, 400, 300, 10);
+    // createPlatform(600, 500, 200, 30);
+    createPlatform(50, 150, 370, 50);
+    createPlatform(50, 50, 300, 50); 
 
 
     
